@@ -13,7 +13,7 @@ This guide provides steps to run AWS Lambda functions locally for the Metadata M
    - Add the Lambda name and execute the script to obtain the environment variables for your Lambda.
 
 3. **Setup `python-lambda-local`**
-   - Do a `pip install python-lambda-local` to 
+   - Do a `pip install python-lambda-local` to install the dependency
    - Create an `event.json` file to mock API calls inside the lambda folder inside functions.
 
 ## Steps
