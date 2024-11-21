@@ -22,7 +22,7 @@ This guide provides steps to run AWS Lambda functions locally for the Metadata M
    - Create an `event.json` file with the required payload.
 
 2. **Replace Environment Variables**
-   - Replace all environment variables in your lambda with the values obtained from [the provided Python script](https://github.com/Gurkeerat08/AWS-Lambda-Setup-Local/blob/main/environment_variables.py).
+   - Replace all environment variables in your lambda with the values in the json obtained from [the provided Python script](https://github.com/Gurkeerat08/AWS-Lambda-Setup-Local/blob/main/environment_variables.py).
    - Before pushing the code, make sure to revert back to the `os.environment` approach.
 
 3. **Run Lambda Locally**
@@ -54,7 +54,9 @@ By using this command, you can run the Lambda directly on your local machine and
 {
   "requestContext": {
     "authorizer": {
-      "uid": "example-user-id"
+      "uid": "example-user-id",
+      "preferred_username" : "gurkeerat"
+
     }
   },
   "headers": {
